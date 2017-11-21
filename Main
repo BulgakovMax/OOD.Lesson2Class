@@ -1,0 +1,26 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+						
+		Cat catOne = new Cat(6, 3, true, "Milk", "Frei", "British");
+		System.out.println(catOne);
+		
+		
+		catOne.getVoice();
+		
+		Animals anim = catOne;
+		
+		System.out.println(anim.getRation());
+		
+		anim.getVoice();
+		
+		Animals [] animalArray = new Animals [5];
+		animalArray [0] = catOne;
+		for(Animals animals : animalArray) {
+			System.out.println(animals);
+		}
+	}
+
+}
